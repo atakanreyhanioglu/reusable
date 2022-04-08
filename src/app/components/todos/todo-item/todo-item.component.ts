@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Todo} from "../../../models/todo";
+import {faTimes} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
   selector: 'app-todo-item',
@@ -8,6 +9,7 @@ import {Todo} from "../../../models/todo";
 })
 export class TodoItemComponent implements OnInit {
   @Input() todo: Todo;
+  faTimes = faTimes;
 
   constructor() { }
 

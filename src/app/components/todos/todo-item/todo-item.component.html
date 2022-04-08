@@ -1,8 +1,9 @@
 <div class="todo spaceBetween-horizontally">
-    <h2>User ID: {{todo.userId}}</h2>
-    <p>{{todo.title}}</p>
-  <div class="center-horizontally">
-    <h3>Finished: {{todo.completed ? 'Yep 👍 ' : 'Nope 😢'}}</h3>
-    <app-button (btnClick)="switchBtnHandler()" btnText="Switch" color="#FE7E6D"></app-button>
+  <h2>{{todo.userId}}</h2>
+  <p>{{todo.title}}</p>
+  <div class="actions spaceBetween-horizontally">
+    <h3>{{todo.completed ? 'Yep 👍 ' : 'Nope 😢'}}</h3>
+    <app-button class="button" (btnClick)="switchBtnHandler()" btnText="Switch" color="#FE7E6D"></app-button>
+    <fa-icon class="icon" [ngStyle]="{'color': 'red'}" [icon]="faTimes"></fa-icon>
   </div>
 </div>
