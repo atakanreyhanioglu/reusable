@@ -1,0 +1,8 @@
+<div class="todo spaceBetween-horizontally">
+    <h2>User ID: {{todo.userId}}</h2>
+    <p>{{todo.title}}</p>
+  <div class="center-horizontally">
+    <h3>Finished: {{todo.completed ? 'Yep 👍 ' : 'Nope 😢'}}</h3>
+    <app-button (btnClick)="switchBtnHandler()" btnText="Switch" color="#FE7E6D"></app-button>
+  </div>
+</div>
